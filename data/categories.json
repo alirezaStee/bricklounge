@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "اسپرسو",
+    "icon": "https://api.rhinomenu.com/category/images/CategoryIcons/AsianFood.svg"
+  },
+  {
+    "id": 2,
+    "name": "قهوه سرد",
+    "icon": "https://api.rhinomenu.com/category/images/CategoryIcons/Drink-1.svg"
+  },
+  {
+    "id": 3,
+    "name": "قهوه های دمی",
+    "icon": "https://api.rhinomenu.com/category/images/CategoryIcons/tea-p.svg"
+  },
+  {
+    "id": 4,
+    "name": "نوشیدنی گرم",
+    "icon": "https://api.rhinomenu.com/category/images/CategoryIcons/AsianFood.svg"
+  },
+  {
+    "id": 5,
+    "name": "ماکتیل",
+    "icon": "https://api.rhinomenu.com/category/images/CategoryIcons/Drink-1.svg"
+  },
+  {
+    "id": 6,
+    "name": "اسموتی",
+    "icon": "https://api.rhinomenu.com/category/images/CategoryIcons/Drink.svg"
+  },
+  {
+    "id": 7,
+    "name": "شیک",
+    "icon": "https://api.rhinomenu.com/category/images/CategoryIcons/Drink.svg"
+  },
+  {
+    "id": 8,
+    "name": "‌‌نوشیدنی‌ها",
+    "icon": "https://api.rhinomenu.com/category/images/CategoryIcons/Drink.svg"
+  },
+  {
+    "id": 9,
+    "name": "پیتزا",
+    "icon": "https://api.rhinomenu.com/category/images/CategoryIcons/pizza.svg"
+  },
+  {
+    "id": 10,
+    "name": "برگر دست ساز",
+    "icon": "https://api.rhinomenu.com/category/images/CategoryIcons/burger-1.svg"
+  },
+  {
+    "id": 11,
+    "name": "ساندویچ",
+    "icon": "https://api.rhinomenu.com/category/images/CategoryIcons/Hotdog.svg"
+  },
+  {
+    "id": 12,
+    "name": "غذای اصلی",
+    "icon": "https://api.rhinomenu.com/category/images/CategoryIcons/turkey.svg"
+  },
+  {
+    "id": 13,
+    "name": "سالاد و پیش غذا",
+    "icon": "https://api.rhinomenu.com/category/images/CategoryIcons/French,Fries.svg"
+  },
+  {
+    "id": 14,
+    "name": "صبحانه",
+    "icon": "https://api.rhinomenu.com/category/images/CategoryIcons/bread.svg"
+  },
+  {
+    "id": 15,
+    "name": "قلیان",
+    "icon": "https://api.rhinomenu.com/category/images/CategoryIcons/wheat-grain.svg"
+  }
+]
