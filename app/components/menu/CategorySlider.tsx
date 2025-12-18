@@ -1,28 +1,29 @@
 'use client';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { useEffect, useState } from 'react';
 import { useCategoryContext } from '../../contexts/CategoryContext';
 import CategoryItem from './CategoryItem';
-import type { Category } from '../../types/item.types';
+import { useCategories } from '../../hooks/useCategories';
 
 export default function CategorySlider() {
-  const [categories, setCategories] = useState<Category[]>([]);
   const { selectedCategoryId, setSelectedCategoryId } = useCategoryContext();
+  const { data: categories = [], isLoading, error } = useCategories();
 
-  useEffect(() => {
-    const fetchCategories = async () => {
-      try {
-        const response = await fetch('/api/categories');
-        const data = await response.json();
-        setCategories(data);
-      } catch (error) {
-        console.error('Failed to fetch categories:', error);
-      }
-    };
+  if (isLoading) {
+    return (
+      <div className="w-full !pt-9 flex justify-center">
+        <div>در حال بارگذاری...</div>
+      </div>
+    );
+  }
 
-    fetchCategories();
-  }, []);
+  if (error) {
+    return (
+      <div className="w-full !pt-9 flex justify-center text-red-500">
+        خطا در دریافت دسته‌بندی‌ها
+      </div>
+    );
+  }
 
   return (
     <div>

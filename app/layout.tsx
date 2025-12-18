@@ -8,6 +8,7 @@ import Brand from './components/shared/Brand';
 import localFont from 'next/font/local';
 import { CategoryProvider } from './contexts/CategoryContext';
 import CartContextProvider from './contexts/CartContext';
+import QueryProvider from './contexts/QueryProvider';
 
 const dana = localFont({
   src: [
@@ -74,15 +75,17 @@ export default function RootLayout({
       <body
         className={`${dana.className} flex min-h-screen items-center justify-center antialiased`}
       >
-        <CategoryProvider>
-          <CartContextProvider>
-            <div className="flex min-h-screen w-full max-w-[700px] flex-col items-center justify-between bg-white">
-              <Header />
-              <Brand />
-              {children}
-            </div>
-          </CartContextProvider>
-        </CategoryProvider>
+        <QueryProvider>
+          <CategoryProvider>
+            <CartContextProvider>
+              <div className="flex min-h-screen w-full max-w-[700px] flex-col items-center justify-between bg-white">
+                <Header />
+                <Brand />
+                {children}
+              </div>
+            </CartContextProvider>
+          </CategoryProvider>
+        </QueryProvider>
       </body>
     </html>
   );
